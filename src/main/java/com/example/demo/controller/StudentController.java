@@ -7,7 +7,7 @@ public class StudentController{
 @Autowired StudentService ser;
 
 @PostMapping("/post");
-public StudentEntity postValue(@ StudentEntity stu){
-    return student.save(stu);
+public StudentEntity sendData(@RequestBody StudentEntity stu){
+    return ser.postData(stu);
    }
 }
