@@ -22,7 +22,7 @@ public class StudentEntity{
         this.createAt=createAt;
       }
       public Integer getId(){
-        return id;;
+        return id;
       }
       public void setId(Integer id){
         this.id=id;
