@@ -45,12 +45,12 @@ public class StudentEntity{
       public void setPassword(String password){
         this.password=password;
       }
-      public StudentEntity(Integer id,String name,String email,String password,Date created){
+      public StudentEntity(Integer id,String name,String email,String password,Date createAt){
         this.id=id;
         this.name=name;
         this.email=email;
         this.password=password;
-        this.created=created;
+        this.createAt=createAt;
       }
       public StudentEntity(){
 
