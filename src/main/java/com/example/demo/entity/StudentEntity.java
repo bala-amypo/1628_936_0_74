@@ -14,12 +14,12 @@ public class StudentEntity{
       private String name;
       private String email;
       private String password;
-      private Date created;
-      public Date getCreated(){
-        return created;
+      private Date createAt;
+      public Date getCreateAt(){
+        return createAt;
       }
-      public void setCreated(Date created){
-        this.created=created;
+      public void setCreateAt(Date createAt){
+        this.createAt=createAt;
       }
       public Integer getId(){
         return id;;
