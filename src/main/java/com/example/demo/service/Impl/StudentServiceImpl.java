@@ -11,7 +11,7 @@ public class StudentServiceImpl implements StudentService{
     @Autowired StudentRepository student;
 
    public StudentEntity postData(StudentEntity stu){
-    return student.
+    return student.save(stu);
    }
 
 }
