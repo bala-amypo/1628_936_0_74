@@ -1,10 +1,10 @@
-package com.example.demo.entity;
-@Entity
+// package com.example.demo.entity;
+// @Entity
 
-public class StudentEntity{
-      private String name;
-      private Integer id;
-      private String email;
-      private String password;
-      
-}
+// public class StudentEntity{
+//       private String name;
+//       private Integer id;
+//       private String email;
+//       private String password;
+
+// }
