@@ -36,7 +36,9 @@ public StudentEntity getData(int id){
 @Override
 public StudentEntity updateData(int id,StudentEntity stu){
     if(student.existsById(id)){
-        Entity.setId
+        Entity.setId(id);
+        return student.save(stu);
     }
+    return null;
 }
 }
