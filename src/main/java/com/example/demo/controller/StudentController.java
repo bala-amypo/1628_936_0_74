@@ -34,5 +34,6 @@ public StudentEntity sendData(@RequestBody StudentEntity stu){
    public StudentEntity getval(int id){
      return ser.getData(id);
    }
-   
+   @PutMapping("/put/{id}")
+   public StudentEntity sendData(@RequestBody StudentEntity stu)
 }
