@@ -19,7 +19,6 @@ public class ValidationEntity {
     @NotNull
     @Email(message="Email is not valid")
     private String email;
-    @NotNull
     @Size(min=2,max=8,message="must be 2 to 8 characters")
     @NotNull(message="password is mandatory")
     private String password;
@@ -59,6 +58,9 @@ public class ValidationEntity {
         this.age=age;
       }
       public ValidationEntity(Long id,
-      @NotNull 
+      @NotNull @Size(min=2,max=8,meaasge="must be 2 to 8 characters")String username,
+      @NotNull @Email(message="Email is not valid")String email,
+      @Size(min=2,max=8,message="must be 2 to 8 characters") @NotNull(message="password is mandatory")String password,
+    @Max(30) @Positive(message="age must be positive ") @NotNull 
       )
 }
