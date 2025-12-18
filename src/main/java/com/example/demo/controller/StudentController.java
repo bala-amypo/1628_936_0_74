@@ -21,6 +21,6 @@ public StudentEntity sendData(@RequestBody StudentEntity stu){
    }
    @GetMapping("/get")
    public List<StudentEntity>getData(){
-    return service.getAllData();
+    return ser.getAllData();
    }
 }
