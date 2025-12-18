@@ -53,7 +53,7 @@ public class ValidationEntity {
       public int getAge(){
         return age;
       }
-      public void setaget(int age){
+      public void setage(int age){
         this.age=age;
       }
       public ValidationEntity(Long id,
@@ -69,6 +69,6 @@ public class ValidationEntity {
         this.age=age;
       }
       public ValidationEntity(){
-        
+
       }
 }
