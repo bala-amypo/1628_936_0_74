@@ -10,6 +10,7 @@ import java.util.List;
 
 
 
+
 @Service
 public class StudentServiceImpl implements StudentService{
     @Autowired StudentRepository student;
@@ -24,4 +25,8 @@ public class StudentServiceImpl implements StudentService{
 
 }
 @Override
+public String DeleteData(@PathVariable int id){
+    String deletebyid(int id);
+    return "Deleted Successfully";
+}
 }
