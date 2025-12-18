@@ -28,17 +28,17 @@ public class ValidationEntity {
     @NotNull
     private Integer age;
 
-      public Integer getId(){
+      public Long getId(){
         return id;
       }
-      public void setId(Integer id){
+      public void setId(Long id){
         this.id=id;
       }
-      public String getName(){
-        return name;
+      public String getuserName(){
+        return username;
       }
-      public void setName(String name){
-        this.name=name;
+      public void setuserName(String username){
+        this.username=username;
       }
       public String getEmail(){
         return email;
@@ -52,4 +52,13 @@ public class ValidationEntity {
       public void setPassword(String password){
         this.password=password;
       }
+      public Integer getaget(){
+        return age;
+      }
+      public void setaget(Integer age){
+        this.age=age;
+      }
+      public ValidationEntity(Long id,
+      @NotNull 
+      )
 }
