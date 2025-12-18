@@ -31,9 +31,11 @@ public StudentEntity sendData(@RequestBody StudentEntity stu){
     return ser.DeleteData(id);
    }
    @GetMapping("/getData/{id}")
-   public StudentEntity getval(int id){
+   public StudentEntity getval(@PathVariable int id){
      return ser.getData(id);
    }
    @PutMapping("/put/{id}")
-   public StudentEntity sendData(@RequestBody StudentEntity stu)
+   public StudentEntity putData(@PathVariable int id,@RequestBody StudentEntity stu){
+    return ser.updateData(id,stu);
+   }
 }
