@@ -14,14 +14,42 @@ public class ValidationEntity {
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Long id;
     @NotNull
-    @Size(min=2,max=8,meaasge="must be 2 to 8 character")
+    @Size(min=2,max=8,meaasge="must be 2 to 8 characters")
     private String username;
+    @NotNull
     @Email(message="Email is not valid")
     private String email;
-    @Max(6)
+    @NotNull
+    @Size(min=2,max=8,message="must be 2 to 8 characters")
     @NotNull(message="password is mandatory")
     private String password;
     @Max(30)
     @Positive(message="age must be positive ")
+    @NotNull
     private Integer age;
+
+      public Integer getId(){
+        return id;
+      }
+      public void setId(Integer id){
+        this.id=id;
+      }
+      public String getName(){
+        return name;
+      }
+      public void setName(String name){
+        this.name=name;
+      }
+      public String getEmail(){
+        return email;
+      }
+      public void setEmail(String email){
+        this.email=email;
+      }
+      public String getPassword(){
+        return password;
+      }
+      public void setPassword(String password){
+        this.password=password;
+      }
 }
