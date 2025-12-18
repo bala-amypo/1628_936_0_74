@@ -37,7 +37,7 @@ public StudentEntity getData(int id){
 public StudentEntity updateData(int id,StudentEntity entity){
     if(student.existsById(id)){
         entity.setId(id);
-        return student.save(stu);
+        return student.save(entity);
     }
     return null;
 }
