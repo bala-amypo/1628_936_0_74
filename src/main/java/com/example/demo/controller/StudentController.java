@@ -30,4 +30,6 @@ public StudentEntity sendData(@RequestBody StudentEntity stu){
    public String deleteData(@PathVariable int id){
     return ser.DeleteData(id);
    }
+   @GetMapping("/getData/{id}")
+   public StudentEntity getData(int id)
 }
