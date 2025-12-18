@@ -3,10 +3,10 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-import jakarta.Validation.constraints.NotNull;
-import jakarta.Validation.constraints.Size;
-import jakarta.Validation.constraints.Email;
-import jakarta.Validation.constraints.Positive;
+import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Size;
+import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.Positive;
 @Entity
 public class ValidationEntity {
     @Id
