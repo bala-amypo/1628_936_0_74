@@ -69,4 +69,5 @@ public class ValidationEntity {
         this.password=password;
         this.age=age;
       }
+      public ValidationEntity();
 }
