@@ -23,4 +23,6 @@ public StudentEntity sendData(@RequestBody StudentEntity stu){
    public List<StudentEntity>getData(){
     return ser.getAllData();
    }
+   @DeleteMapping("/delete/{id}")
+   public String deleteData(@)
 }
