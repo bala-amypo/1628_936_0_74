@@ -23,13 +23,16 @@ public StudentEntity sendData(@RequestBody StudentEntity stu){
     return ser.postData(stu);
    }
    @GetMapping("/get")
-   public List<StudentEntity>getData(){
+   public List<StudentEntity>getAllVal(){
     return ser.getAllData();
    }
    @DeleteMapping("/delete/{id}")
-   public String deleteData(@PathVariable int id){
+   public String DeleteVal(@PathVariable int id){
     return ser.DeleteData(id);
    }
    @GetMapping("/getData/{id}")
-   public StudentEntity getData(int id)
+   public StudentEntity getval(int id){
+     return ser.getData(id);
+   }
+   
 }
