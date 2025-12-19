@@ -17,7 +17,7 @@ import lombok.NoArgsConstructor;
 public class StudentDetailEntity{
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
-      private Integer id;
+      private Long id;
       private int registerno;
       private String address;
 }
