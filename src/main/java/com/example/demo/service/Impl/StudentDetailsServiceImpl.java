@@ -13,7 +13,7 @@ import com.example.demo.service. StudentDetailsService;
 
 @Service
 public class  StudentDetailsServiceImpl implements  StudentDetailsService{
-    @Autowired  IdDetailsRepository detail;
+    @Autowired  StudentDetailsRepository detail;
     @Override
 
    public  StudentDetails postDatas( StudentDetails ids){
