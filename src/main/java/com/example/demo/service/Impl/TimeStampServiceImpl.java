@@ -14,7 +14,7 @@ public class TimeStampServiceImpl implements TimeStampService{
     @Autowired TimeStampRepository  time;
     @Override
 
-   public TimeStampEntity postData(TimeStampEntity tym){
+   public TimeStampEntity postDataa(TimeStampEntity tym){
     return time.save(tym);
    }
 }
