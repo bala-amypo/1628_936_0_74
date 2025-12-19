@@ -9,15 +9,14 @@ import org.springframework.web.bind.annotation.RestController;
 
 
 import com.example.demo.entity.TimeStampEntity;
-import com.example.demo.service.StudentService;
-import java.util.List;
+import com.example.demo.service.TimeStampService;
 
 @RestController
-public class StudentController{
-@Autowired StudentService ser;
+public class TimeStampController{
+@Autowired TimeStampService tyms;
 
-@PostMapping("/post")
-public StudentEntity sendData(@RequestBody StudentEntity stu){
-    return ser.postData(stu);
+@PostMapping("/Times")
+public TimeStampEntity sendData(@RequestBody TimeStampEntity tym){
+    return tyms.postDataa(tym);
    }
 }
