@@ -4,7 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.example.demo.entity. IdDetails;
-import com.example.demo.repository.StudentRepository;
+import com.example.demo.repository.IdDetailsRepository;
 import com.example.demo.service. IdDetailsService;
 
 
