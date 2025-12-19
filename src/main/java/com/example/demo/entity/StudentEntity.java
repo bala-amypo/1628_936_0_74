@@ -55,5 +55,8 @@ public class StudentEntity{
       // public StudentEntity(){
 
       // }
-      
+      @Data
+      @AllArgsConstructor
+      @NoArgsConstructor
+
 }
