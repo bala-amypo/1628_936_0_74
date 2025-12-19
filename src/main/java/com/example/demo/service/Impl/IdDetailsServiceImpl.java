@@ -5,7 +5,7 @@ import org.springframework.stereotype.Service;
 
 import com.example.demo.entity. IdDetails;
 import com.example.demo.repository.StudentRepository;
-import com.example.demo.service. IdDetailstService;
+import com.example.demo.service. IdDetailsService;
 
 
 
@@ -16,7 +16,7 @@ public class  IdDetailsServiceImpl implements  IdDetailsService{
     @Autowired  IdDetailsRepository detail;
     @Override
 
-   public  IdDetails postData( IdDetails ids){
+   public  IdDetails postDatas( IdDetails ids){
     return detail.save(ids);
    }
 }

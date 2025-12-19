@@ -4,19 +4,19 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.example.demo.entity.StudentDetails;
-import com.example.demo.repository.StudentRepository;
-import com.example.demo.service. IdDetailstService;
+import com.example.demo.repository.StudentDetailsRepository;
+import com.example.demo.service. StudentDetailsService;
 
 
 
 
 
 @Service
-public class  IdDetailsServiceImpl implements  IdDetailsService{
+public class  StudentDetailsServiceImpl implements  StudentDetailsService{
     @Autowired  IdDetailsRepository detail;
     @Override
 
-   public  IdDetails postData( IdDetails ids){
+   public  StudentDetails postDatas( StudentDetails ids){
     return detail.save(ids);
    }
 }
