@@ -18,6 +18,7 @@ public class IdDetails{
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
       private Long id;
-      private int idCardNo ;
-      private String student_id;
+      private Int cardnumber ;
+      @OneToOne
+      private StudentDetails student;
 }
