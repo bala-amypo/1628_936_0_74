@@ -19,4 +19,8 @@ public class  IdDetailsServiceImpl implements  IdDetailsService{
    public  IdDetails postDatas( IdDetails ids){
     return detail.save(ids);
    }
+   @Override
+public IdDetails getData(int id){
+    return  detail.findById(id).orElse(null);
+}
 }
