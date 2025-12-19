@@ -22,6 +22,6 @@ public class IdDetails{
       private Long id;
       private Int cardnumber ;
       @OneToOne
-      @JoinColumn
+      @JoinColumn(name="student_id")
       private StudentDetails student;
 }
