@@ -25,13 +25,17 @@ public class TimeStampEntity{
       private String email;
       private LocalDateTime createAt;
       private LocalDateTime updateAt;
+
 @PrePersist
+LocalDateTime now=LocalDateTime().now();
 public void Oncreate(){
-  LocalDateTime now=LocalDateTime().now();
+
   this.createAt=now;
-  this.updateAtt=now;
+  this.updateAt=now;
 }
 @PreUpdate
-public 
+public void Onupdate(){
+  this.updateAt=now;
+}
 
 }
