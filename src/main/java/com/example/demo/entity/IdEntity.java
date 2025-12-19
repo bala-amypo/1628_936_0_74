@@ -18,6 +18,6 @@ public class IdEntity{
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
       private Long id;
-      private String College;
-      private String dept;
+      private int idCardNo ;
+      private String student_;
 }
