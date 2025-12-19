@@ -20,7 +20,7 @@ public ValidationEntity sendData(@Valid @RequestBody ValidationEntity Validate){
     return valid.postData(Validate);
    }
    @GetMapping("/GD/{id}")
-   public ValidationEntity getval(@PathVariable Integer id){
+   public ValidationEntity getval(@PathVariable Long id){
      return valid.getDataById(id);
    }
 }
