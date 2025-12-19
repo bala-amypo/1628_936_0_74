@@ -20,7 +20,7 @@ public class IdDetails{
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
       private Long id;
-      private Int cardnumber ;
+      private int cardnumber ;
       @OneToOne
       @JoinColumn(name="student_id")
       private StudentDetails student;
